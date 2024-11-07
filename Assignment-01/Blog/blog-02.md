@@ -1,7 +1,5 @@
 ## How to Handle Asynchronous Operations Using Async/Await Over Callback/Promise in TypeScript
 
----
-
 Asynchronous programming is a common necessity in modern web development. TypeScript offers async/await to handle asynchronous operations in a more readable and manageable way compared to traditional callbacks or promises.
 
 Callbacks were the initial approach to handle asynchronous tasks, but they often led to "callback hell," where nested callbacks made code difficult to follow.

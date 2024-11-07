@@ -1,7 +1,5 @@
 ## Why Are Type Guards Necessary? Discuss Various Types of Type Guards and Their Use Cases
 
----
-
 Type guards in TypeScript are essential for refining types during runtime. Without type guards, TypeScript can't always accurately infer types when the types are more complex or dynamic.
 
 Type guards are particularly useful when working with union types or unknown types. They ensure that your code handles different types correctly and safely, preventing runtime errors.

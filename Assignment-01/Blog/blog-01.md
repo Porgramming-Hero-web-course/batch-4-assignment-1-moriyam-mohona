@@ -1,7 +1,5 @@
 ## The Significance of Union and Intersection Types in TypeScript
 
----
-
 In TypeScript, union and intersection types are powerful tools that help manage different types of data in a structured way. Union types allow a value to be one of several types, while intersection types combine multiple types into one.
 
 Union Types are used when a variable can hold one of several types. For example, if a variable can be either a string or a number, you can define it as string | number. This provides flexibility in handling different types while maintaining type safety.
