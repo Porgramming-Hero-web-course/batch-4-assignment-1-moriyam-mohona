@@ -4,16 +4,16 @@ In TypeScript, union and intersection types are powerful tools that help manage 
 
 Union types allow a variable to be one of several possible types, denoted by the "|" symbol.
 
-    -A variable with a union type can only use methods and properties that exist on all of its constituent types. If it tries to access a property that doesn't exist on one of them, TypeScript will throw a compile-time error.
-    -One can perform conditional checks at runtime to determine which type a union value currently holds using the typeof operator or other custom logic.
+-A variable with a union type can only use methods and properties that exist on all of its constituent types. If it tries to access a property that doesn't exist on one of them, TypeScript will throw a compile-time error.
+-One can perform conditional checks at runtime to determine which type a union value currently holds using the typeof operator or other custom logic.
 
-# Example:
+### Example:
 
+```typescript
 let userId: string | number;
 userId = "abc123";
 userId = 456;
-
----
+```
 
 Intersection types combine multiple types into one, denoted by the "&" symbol.
 
@@ -21,17 +21,19 @@ Intersection types combine multiple types into one, denoted by the "&" symbol.
 -Intersection types are commonly used to define objects that need to implement multiple interfaces or extend multiple classes.
 -Intersection types can also be combined with union types to represent complex data structures that may contain values from multiple sources with differing types.
 
-# Example:
+### Example:
 
+```typescript
 interface User {
-name: string;
+  name: string;
 }
 
 interface Admin {
-role: string;
+  role: string;
 }
 
 let userAdmin: User & Admin = {
-name: "John Doe",
-role: "admin",
+  name: "John Doe",
+  role: "admin",
 };
+```
